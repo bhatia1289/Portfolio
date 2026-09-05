@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- This header will appear on every single page -->
+   <nav>
+        <div class="nav-container">
+            <h1 class="logo"><img src="" alt="" href="/home"></h1>
+            <ul class="nav-links">
+                <li><a href="/home">About</a></li>
+                <li><a href="/my_resume">My Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Unique page content injects here -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+</body>
+</html>
