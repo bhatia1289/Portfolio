@@ -1,0 +1,23 @@
+{% extends "base.html "%}
+{% block content %}
+<section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <a href="https://github.com/bhatia1289/my-flask-app/tree/bwp_app" target="_blank" class="project-card">
+
+            <div class="project-image">
+                <img src="{{ url_for('static', filename='images/child_bodyweight.png') }}" alt="Project 1">
+            </div>
+
+            <h3>Child Body weight predictor</h3>
+
+            <p>Predicts the body weight of the baby during pregnancy</p>
+
+        </a>
+
+    </div>
+</section>
+
+{% endblock %}

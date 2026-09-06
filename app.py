@@ -10,5 +10,13 @@ def home():
 def my_resume():
     return render_template('resume.html')
 
+@app.route('/my_projects')
+def my_projects():
+    return render_template('projects.html')
+
+@app.route('/contact')
+def contact_me():
+    return render_template('contact.html')
+
 if __name__ == '__main__':
     app.run(debug = True)
