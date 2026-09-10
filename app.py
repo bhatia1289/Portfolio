@@ -18,5 +18,9 @@ def my_projects():
 def contact_me():
     return render_template('contact.html')
 
+@app.route('/skills')
+def skills():
+    return render_template('skills.html')
+
 if __name__ == '__main__':
     app.run(debug = True)

@@ -2,7 +2,7 @@
 {% block content %}
 <section id="experience" class="section bg-light">
     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vg7BRC7wd0c?si=8Lji9piFT8SNuP-J"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rcZHIUjJ-KE?si=gm4op8p_o4Y4Xjmg"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -13,10 +13,7 @@
     <h2 class="section-title">My Resume</h2>
 
     <div class="pdf-container">
-        <embed 
-            src="{{ url_for('static', filename='resume.pdf') }}#view=FitH&toolbar=0" 
-            type="application/pdf" 
-        />
+        <embed src="{{ url_for('static', filename='resume.pdf') }}#view=FitH&toolbar=0" type="application/pdf" />
         <div class="pdf-actions">
             <a href="{{ url_for('static', filename='resume.pdf') }}" download class="btn">
                 Download Resume (PDF)
